@@ -1,0 +1,99 @@
+@import url("satoshi.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #607b96 #6366f11f;
+  transition: all;
+  overflow-x: hidden;
+  font-family: Satoshi-Regular, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a191a;
+  /* color: #f0fff0; */
+  /* color: #898688; */
+  color: #cecddb;
+}
+
+.blue-gradient {
+  background: radial-gradient(circle at 100%, #1a191a);
+}
+
+.radial-gradient {
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #f35 0%,
+    #43e 100%
+  );
+}
+
+/* ---------------------- TAILWIND ---------------------- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1a191a;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---------------------- TAILWIND ---------------------- */
+@layer utilities {
+  .max-container {
+    @apply mx-auto w-full max-w-[1200px] px-4 xl:px-0;
+  }
+
+  /* .padding-container {
+      @apply px-6 lg:px-20;
+    } */
+
+  .padding-y {
+    @apply py-6 lg:py-10;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .paragraph {
+    @apply py-2 flex text-justify text-[16px] leading-6 font-satoshi;
+  }
+
+  .big-title {
+    @apply text-5xl md:text-7xl;
+  }
+  .title {
+    @apply text-4xl md:text-5xl font-inter font-bold;
+  }
+
+  .flexCard {
+    @apply flex flex-col lg:flex-row;
+  }
+
+  .flexCardReverse {
+    @apply flex flex-col lg:flex-row-reverse;
+  }
+
+  .formInput {
+    @apply w-full rounded-md border border-[#e0e0e0] bg-[#cecddb] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-purple-primary focus:ring-4 focus:shadow-md;
+  }
+}

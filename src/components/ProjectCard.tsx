@@ -33,7 +33,7 @@ const ProjectCard = ({
     >
       {/* Left side */}
       <div className="flex flex-col text-[14px] w-full md:w-[50%]">
-        <h4 className="text-lg">{title}</h4>
+        <h4 className="text-2xl pb-4">{title}</h4>
         <div className="flex flex-row gap-2">
           {tech_stack.map((tech, index) => (
             <Pill key={index} item={tech} />

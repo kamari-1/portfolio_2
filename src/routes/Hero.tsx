@@ -1,5 +1,6 @@
 import { SOCIAL_MEDIA } from "../assets/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import heroSvg from "../assets/images/heroSvg.svg";
 
 const Hero = () => {
   return (
@@ -30,7 +31,13 @@ const Hero = () => {
         </div>
 
         {/* ------------------------- Gradient ------------------------- */}
+
         <div className="w-[450px] h-[492px] absolute -top-[110px] -right-[200px] rounded-2xl radial-gradient opacity-30 rotate-12 blur-[100px] z-0"></div>
+        <img
+          src={heroSvg}
+          alt="Image"
+          className="absolute top-0 right-0 bg-none hidden xl:flex"
+        />
 
         {/* ------------------------- Socials ------------------------- */}
         <div className="flex flex-row gap-6 mt-10">

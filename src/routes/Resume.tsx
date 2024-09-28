@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section className="max-container mt-10">
       <div className="flex">
-        <h1 className="title mb-10">My Experience</h1>
+        {/* <h1 className="title mb-10">My Experience</h1> */}
       </div>
       {RESUME_DATA.map((data) => (
         <ResumeCard

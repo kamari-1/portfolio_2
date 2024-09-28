@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section className="max-container mt-10">
       <div className="flex">
-        <h1 className="title mb-10">My Projects</h1>
+        {/* <h1 className="title mb-10">My Projects</h1> */}
       </div>
       {PROJECT_DATA.map((project, index) => (
         <ProjectCard

@@ -7,18 +7,19 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #607b96 #6366f11f;
-  transition: all;
-  overflow-x: hidden;
-  font-family: Satoshi-Regular, sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #607b96 #6366f11f;
+  scroll-behavior: smooth;
+  transition: all;
+  overflow-x: hidden;
+  font-family: Satoshi-Regular, sans-serif;
 }
 
 body {
@@ -26,6 +27,28 @@ body {
   /* color: #f0fff0; */
   /* color: #898688; */
   color: #cecddb;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body,
+html {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  /* background: blue; */
+  width: 100%;
+  margin: 0;
 }
 
 .blue-gradient {
@@ -35,10 +58,19 @@ body {
 .radial-gradient {
   background-image: radial-gradient(
     farthest-corner at 40px 40px,
-    #f35 0%,
-    #43e 100%
+    #cecddb,
+    #6366f1 /* #f35 0%, */ /* #43e 100% */
   );
 }
+
+a.active {
+  color: #cecddb;
+  font-weight: bold;
+}
+
+/* #logo {
+  color: #898688;
+} */
 
 /* ---------------------- TAILWIND ---------------------- */
 #particles-js {
@@ -54,6 +86,9 @@ body {
 
 /* ---------------------- TAILWIND ---------------------- */
 @layer utilities {
+  /* .max-container-nav {
+    @apply mx-auto w-full max-w-[1200px] px-4 xl:px-0;
+  } */
   .max-container {
     @apply mx-auto w-full max-w-[1200px] px-4 xl:px-0;
   }
@@ -75,7 +110,7 @@ body {
   }
 
   .paragraph {
-    @apply py-2 flex text-justify text-[16px] leading-6 font-satoshi;
+    @apply py-2 flex md:text-justify text-[16px] leading-6 font-satoshi max-w-[480px] md:max-w-full;
   }
 
   .big-title {
@@ -95,5 +130,13 @@ body {
 
   .formInput {
     @apply w-full rounded-md border border-[#e0e0e0] bg-[#cecddb] py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-purple-primary focus:ring-4 focus:shadow-md;
+  }
+
+  .navLinkMedView {
+    @apply border-main-grey flex justify-center items-center;
+  }
+
+  .navLinkText {
+    @apply pb-2 px-8 hover:text-light-brown;
   }
 }

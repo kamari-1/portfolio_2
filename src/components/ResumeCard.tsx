@@ -17,7 +17,7 @@ const ResumeCard = ({
   skills,
 }: ResumeCardProps) => {
   return (
-    <div className="text-wrap text-justify font-manrope flex flex-col pb-10">
+    <div className="text-wrap md:text-justify font-manrope flex flex-col pb-10">
       <div className="flex flex-col lg:flex-row justify-between align-middle my-4">
         <div>
           <h3 className="text-lg">
@@ -25,7 +25,7 @@ const ResumeCard = ({
             {title}
           </h3>
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex mt-2 md:mt-0 gap-2 items-center">
           <CalendarDaysIcon className="h-6 text-purple-primary" />
           <h4 className="font-[inconsolata]">{period}</h4>
         </div>

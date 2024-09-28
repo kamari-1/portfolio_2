@@ -25,6 +25,7 @@ export default {
         "main-light": "#6366F11f",
         "main-light-grey": "#607b96",
         "main-grey": "#1E2D3D",
+        "light-brown": "#898688",
       },
       fontFamily: {
         // satoshi: ["Satoshi", "sans-serif"],

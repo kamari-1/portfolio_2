@@ -3,6 +3,7 @@ import travelAdvisory from "../assets/images/travelAdvisory.png";
 import shoppy from "../assets/images/shoppy.png";
 import gymApp from "../assets/images/gymApp.png";
 import portfolio from "../assets/images/portfolio.png";
+import zentry from "../assets/images/zentry.png";
 
 import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons/faFreeCodeCamp";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
@@ -69,6 +70,14 @@ export const RESUME_DATA = [
 ];
 
 export const PROJECT_DATA = [
+  {
+    title: "Zentry Clone",
+    img: zentry,
+    tech_stack: ["React", "Tailwind", "Gsap"],
+    desc: "Zentry pioneers the Metagame—a unified play layer where worlds converge and communities connect—laying the foundation for what will soon become one of the world’s largest virtual economies, powered by gaming and AI.",
+    repo: "https://github.com/kamari-1/zentry-clone",
+    demo_url: "https://zentryclonebykamari.netlify.app/",
+  },
   {
     title: "Shoppy Dashboard",
     img: shoppy,

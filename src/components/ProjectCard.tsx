@@ -29,7 +29,7 @@ const ProjectCard = ({
         index == 0 || (index && index % 2 === 0)
           ? "flexCard"
           : "flexCardReverse"
-      } gap-4 p-4 mb-10 rounded-xl font-satoshi hover:bg-main-light scale-95 hover:scale-100 transition-all`}
+      } gap-4 md:gap-20 p-4 mb-10 rounded-xl font-satoshi hover:bg-main-light scale-95 hover:scale-100 transition-all`}
     >
       {/* Left side */}
       <div className="flex flex-col text-[14px] w-full md:w-[50%]">

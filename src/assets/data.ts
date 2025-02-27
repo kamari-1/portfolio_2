@@ -108,7 +108,7 @@ export const PROJECT_DATA = [
     tech_stack: ["React", "TypeScript", "Tailwind"],
     desc: "",
     repo: "https://github.com/kamari-1/Hoobank-app",
-    demo_url: "https://kamari-hoobank-app.netlify.app/",
+    demo_url: "https://clementoboh.netlify.app/",
   },
   {
     title: "Hoobank",
